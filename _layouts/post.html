@@ -2,9 +2,7 @@
 layout: page
 ---
 
-{% if page.image and page.headerImage %}
-    <img class="title-image" src="{{ page.image }}" alt="{{ page.title }}">
-{% endif %}
+{%- comment -%} Header image removed by request — no images will appear above post titles by default. If you later want a per-post header image, re-enable this block and set `headerImage: true` in the post front matter. {%- endcomment -%}
 
 <h1 class="title">{{ page.title }}</h1>
 
@@ -25,25 +23,16 @@ layout: page
 
 {% if site.post-advance-links contains page.category %}
     <div class="blog-navigation">
-        {% if page.previous.hidden == false and page.previous.url %}
-            <a class="prev" href="{{ site.url }}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+        {% comment %} Use safe existence checks and `relative_url` so links work locally and with a baseurl. {% endcomment %}
+        {% if page.previous and page.previous.url and page.previous.hidden != true %}
+            <a class="prev" href="{{ page.previous.url | relative_url }}">&laquo; {{ page.previous.title }}</a>
         {% else %}
-            <a class="prev"></a>
+            <span class="prev"></span>
         {% endif %}
-        {% if page.next.hidden == false and page.next.url %}
-            <a class="next" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+        {% if page.next and page.next.url and page.next.hidden != true %}
+            <a class="next" href="{{ page.next.url | relative_url }}">{{ page.next.title }} &raquo;</a>
+        {% else %}
+            <span class="next"></span>
         {% endif %}
     </div>
-{% endif %}
-
-{% if site.related %}
-    {% include related.html %}
-{% endif %}
-
-{% if site.show-author %}
-    {% include author.html %}
-{% endif %}
-
-{% if site.disqus.categories contains page.category %}
-    {% include disqus.html %}
 {% endif %}

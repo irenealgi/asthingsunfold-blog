@@ -53,6 +53,12 @@ Or run with [docker](https://github.com/BretFisher/jekyll-serve).
 
 You can customize your site on `_config.yml` file.
 
+## Site customizations made
+
+- Comments (Disqus) have been removed from this site.
+- Related-posts and share buttons have been disabled/removed from post pages.
+
+
 ## How To?
 
 Check the [FAQ](./FAQ.md).

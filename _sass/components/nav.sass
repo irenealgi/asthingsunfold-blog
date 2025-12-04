@@ -10,22 +10,27 @@
 
         > .item > .link
             display: inline-block
-            font-weight: $thin-font
-            font-size: 1.4rem
-            padding: 20px 10px
+            font-weight: 400
+            font-size: 1.6rem
+            padding: 15px 20px
             text-decoration: none
+            color: $black
+            transition: color 0.2s ease-in-out
+            
+            &:hover
+                color: $hot-pink
 
 .nav
-    position: absolute
-    right: 0
-    top: 0
+    display: block
+    margin: 0 auto
+    text-align: center
 
     > .list
         padding: 0 13px 0
 
         > .item > .link
-            font-size: 1.4rem
-            padding: 20px 10px
+            font-size: 1.6rem
+            padding: 7px 15px
 
 .nav-home
     margin-top: 40px
@@ -35,12 +40,32 @@
         padding: 0
 
         > .item > .link
-            font-size: 2rem
-            padding: 7px 15px
-            margin: 0
-            border-radius: 4%
-            transition: all .4s ease-in-out
-            width: 70px
-
+            font-size: 1.6rem
+            padding: 10px 20px
+            margin: 0 5px
+            border-radius: 4px
+            transition: all 0.3s ease-in-out
+            color: $black
+            
             &:hover
-                color: $alpha
+                color: $hot-pink
+                background-color: rgba($hot-pink, 0.1)
+
+
+
+.header .nav, .header-home .nav
+    position: static
+    display: block
+    margin-bottom: 14px
+
+    > .list
+        padding: 0
+        text-align: center
+
+        > .item
+            display: inline-block
+
+        > .item > .link
+            font-size: 1.4rem
+            padding: 6px 10px
+            color: $gama

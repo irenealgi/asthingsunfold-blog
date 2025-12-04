@@ -25,11 +25,7 @@
         </a>
     {% endif %}
 
-    {% if site.github %}
-        <a class="link" data-title="github.com/{{ site.github }}" href="https://github.com/{{ site.github }}" target="_blank"  rel="noopener" alt="anchor link for social media github" aria-label="anchor link for social media github">
-            <i class="fa-brands fa-github"></i>
-        </a>
-    {% endif %}
+    {%- comment -%} GitHub link removed per user request. To restore, add `github: USERNAME` to `_config.yml` and re-enable this block. {%- endcomment -%}
 
     {% if site.email %}
         <a class="link" data-title="{{ site.email }}" href="mailto:{{ site.email }}"  rel="noopener" alt="anchor link for email" aria-label="anchor link for email">

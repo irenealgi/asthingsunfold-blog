@@ -3,8 +3,6 @@ title: About Irene Alegre
 layout: page
 ---
  
-Hi, I’m Irene — product designer, compulsive reader, and person who thinks best by writing things down. This blog is where I sort through whatever I’m learning: design problems, side projects, work dilemmas, books, family life, and the odd thought that won’t leave me alone.
+I'm Irene, and I design digital products, raise a child and read more than the average person and much less than I would like. I'm someone who is always looking for ways to improve herself, either by focusing on how to be more productive, calmer or communicate more effectively. 
 
-I care about clarity, systems, and making things less painful for the people who use them. I also juggle a toddler, a growing stack of books, and a career that keeps reinventing itself.
-
-Nothing here is polished. It’s just me trying to understand what’s unfolding and why it matters.
+Like all of us, I'm a work in progress, and this blog is a small representation of that. This is me, writing about what I care about, as things unfold. 

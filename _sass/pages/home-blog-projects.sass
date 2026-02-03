@@ -33,27 +33,32 @@
 
     > .item > .url
         width: 100%
-        display: block
+        display: flex
+        align-items: center
         padding: 20px 0
         text-decoration: none
 
+    // ensure title takes remaining space and can shrink properly
     > .item > .url > .title
         margin: 0
-        width: 75%
         font-weight: 500
         transition: all ease-in-out .2s
+        order: 1
+        flex: 1 1 auto
+        min-width: 0
 
     > .item:hover > .url > .title
         color: $delta
 
     // maybe we can't nest html5 elements
     // can you help me?
+    // date column: fixed width on the right
     aside
         position: relative
-        top: 2px
         margin: 0
-        width: 25%
-        float: right
+        order: 2
+        flex: 0 0 25%
+        max-width: 25%
         font-weight: 300
         color: $gama
         text-align: right
